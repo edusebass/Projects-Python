@@ -1,2 +1,2 @@
 # python
-code python
+-- Programs in code python.
