@@ -37,7 +37,7 @@ c4 = float(input())
   #REALIZA EL PROCEDIMIENTO
 suma = c1 + c2 + c3 + c4
 promedio = suma / CALIFI
-  IMPRIME LOS RESULTADOS
+  # IMPRIME LOS RESULTADOS
 print("La suma de las calificaciones: ", suma)
 print("El promedio de las calificaciones: ", promedio)
 print("Si el promedio es mayor a 14 pasas, caso contrario perdiste😢")
