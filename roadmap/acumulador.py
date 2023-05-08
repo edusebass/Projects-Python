@@ -8,7 +8,7 @@
 '''
 
 
-'''
+'''asd
   Por ejemplo
   Una cuenta de ahorros puede representarse en un algoritmo mediante un acumulador, pues 
   el ahorrista no siempre podrá ahorrar una cantidad fija en la cuenta, 
