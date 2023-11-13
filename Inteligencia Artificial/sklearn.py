@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
+import matplotlib.pyplot as plt
 
 #leer archivos
 datos = pd.read_csv("Salary_Data1.csv")
@@ -37,3 +38,20 @@ print("El coeficiente de determinacion es: ", r2)
 salario = modelo.predict([[2]])
 print("EL salario es: ", salario)
 
+#imprimir los coeficientes de regresion
+print("El coeficiente B1 es: ", modelo.coef_)
+print("La intercepcion es: ", modelo.intercept_)
+
+#crear una grafica de dispersion
+plt.scatter(x['YearsExperience'], y)
+plt.title("Regresion Lineal")
+plt.xlabel("Años de experiencia")
+plt.ylabel("Salario")
+plt.show()
+
+#grafica de los valores obtenidos y los valores reales
+#Crear una lista desde 1 hasta la longitud de ytest
+lista = [i for i in range(1, len(y_test)+ 1,1)] 
+plt.plot(lista, y_test, color="r")
+plt.plot(lista, y_obt)
+plt.show()
